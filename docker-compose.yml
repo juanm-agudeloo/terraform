@@ -1,0 +1,6 @@
+services:
+  uno:
+    image: servicio01
+    build: ./servicio01/
+    ports:
+      - "80:80"
