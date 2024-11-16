@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-  ami           = "ami-0866a3c8686eaeeba"
+  ami           = "ami-005fc0f236362e99f"
   instance_type = "t2.micro"
 }
 
@@ -38,7 +38,7 @@ resource "aws_security_group" "allow_http" {
 }
 
 resource "aws_instance" "my_instance" {
-  ami           = "ami-0866a3c8686eaeeba"  # Asegúrate de que es válido en us-east-1
+  ami           = "ami-005fc0f236362e99f"  # Asegúrate de que es válido en us-east-1
   instance_type = "t2.micro"
   key_name      = aws_key_pair.terraform_key.key_name
   security_groups = [aws_security_group.allow_http.name]
