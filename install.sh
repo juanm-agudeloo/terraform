@@ -1,7 +1,7 @@
 #!/bin/sh
 sudo apt update
-sudo apt install docker-compose -y
+sudo apt install -y docker.io docker-compose
 sudo apt install git -y
-git clone https://github.com/juanm-agudeloo/terraform
-cd terrform
+git clone https://github.com/juanm-agudeloo/terraform.git
+cd terraform
 sudo docker-compose up -d
